@@ -5,9 +5,14 @@ def return_or_exchange():
     choice = None
     while choice is None:
         choice = input("Do you want to return or exchange a product?(1 for help) ")
-        if choice.lower() != "exchange" or "return":
+        if choice == "1":
+            directions()
+            choice = None
+        elif choice.lower() == "exchange" or choice.lower() == "return":
+            break
+        else:
             print('Invalid Input. Please choose between "exchange" and "return".')
             choice = None
-        elif choice.lower() == "1":
-            directions()
     return choice
+
+return_or_exchange()
