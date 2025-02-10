@@ -4,15 +4,13 @@ def directions():
 def return_or_exchange():
     choice = None
     while choice is None:
-        choice = input("Do you want to return or exchange a product?(1 for help) ")
+        choice = str(input("Do you want to return or exchange a product?(1 for help) ")).strip()
         if choice == "1":
             directions()
             choice = None
         elif choice.lower() == "exchange" or choice.lower() == "return":
-            break
+            return choice
         else:
             print('Invalid Input. Please choose between "exchange" and "return".')
             choice = None
-    return choice
-
 return_or_exchange()
