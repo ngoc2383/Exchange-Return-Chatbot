@@ -112,6 +112,6 @@ Highlights:
  - Input: product ID, date bought, reason for return/exchange.
  - Output: confirmation of request and submission.
  - Functions: return_or_exchange, product_id, bought_date, return_exchange_reason, clarify.
- - Most challenging: edge cases problems and improper loop
+ - Most challenging: edge cases problems and improper loop + 
  - Possible additional function: data.txt as the store inventory --> make experience more realistic.
 '''
